@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="giftContainer" id="box">
+        <div class="gift">
+            <input type="checkbox" id="click">
+            <label for="click" class="click"></label>
+            <div class="wishes">Feliz Aniverário, <br> Sra. Ancha!</div>
+        </div>
+    </div>
+
+    <div id="button" style="display: block; position: relative; top: 100px; border: 1px solid #00b4d8; padding: 10px 20px; border-radius: 20px; color: #00b4d8;">
+        Clique tampa da caixa
+    </div>
+
+    <div id="info" style="width: 70%; margin: auto; display: none; position: absolute; bottom: 70px; margin: 0 20px; border: 1px solid #0b4f6c; padding: 10px 20px; border-radius: 20px; color: #0b4f6c;">
+        Parabéns pelo seu aniversário! 🎉 <br> Que este seja um dia especial, repleto de sorrisos e momentos felizes. Agradecemos por fazer parte da nossa jornada e desejamos um ano incrível pela frente. Felicidades!
+    </div>
+
+    <script>
+        const button = document.getElementById("button");
+        const info = document.getElementById("info");
+        const box = document.getElementById("box");
+
+        box.addEventListener("click", () => {
+            info.style.display = "block";
+            button.style.display = "none";
+        });
+    </script>
+</body>
+</html>
